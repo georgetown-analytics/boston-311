@@ -1,0 +1,1 @@
+This folder will be used to share analytical output, such as tables, model results, or other non-visual output.
