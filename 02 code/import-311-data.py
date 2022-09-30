@@ -26,5 +26,21 @@ dfs = [pd.read_csv(url) for url in urls]
 # combine into a single data frame
 df_311 = pd.concat(dfs, ignore_index=True)
 
+# fix a few of the columns
+# convert the closed date to a date time format
+df_311['closed_dt'] = pd.to_datetime(df_311['closed_dt'])
+
+df_311['open_dt'] = pd.to_datetime(df_311['open_dt'])
+
+# collapse dates down to month-year
+df_311['close_date'] = df_311['closed_dt'].dt.to_period('M')
+
+df_311['open_date'] = df_311['open_dt'].dt.to_period('M')
+
+# convert our closed variable to binary, 1/0
+df_311['closed'] = df_311['case_status'].apply(lambda x: 1 if x=='Closed' else 0)
+
+df_311['opened'] = df_311['case_status'].apply(lambda x: 1 if x=='Open' else 0)
+
 # not recommended, but you can write this to a csv file
 # df_311.to_csv("boston_311.csv", index = False)
