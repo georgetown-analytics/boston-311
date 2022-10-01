@@ -37,6 +37,11 @@ df_311['close_date'] = df_311['closed_dt'].dt.to_period('M')
 
 df_311['open_date'] = df_311['open_dt'].dt.to_period('M')
 
+# create year columns
+df_311['close_year'] = df_311['closed_dt'].dt.year
+
+df_311['open_year'] = df_311['open_dt'].dt.year
+
 # convert our closed variable to binary, 1/0
 df_311['closed'] = df_311['case_status'].apply(lambda x: 1 if x=='Closed' else 0)
 
