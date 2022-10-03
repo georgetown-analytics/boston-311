@@ -11,6 +11,7 @@ import json
 import requests
 import pandas as pd
 from pprintpp import pprint as pp
+from pandas import json_normalize
 
 # Data ingestion prep----------------
 # there are just under 3.9 million observations in the data according to the OCPF website
