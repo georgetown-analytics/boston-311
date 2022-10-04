@@ -8,7 +8,6 @@
 # load libraries
 import requests
 import pandas as pd
-from bs4 import BeautifulSoup as bs
 from tqdm.notebook import tqdm
 
 # create a header object for the scraping
