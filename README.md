@@ -7,7 +7,7 @@ The [Code folder](https://github.com/georgetown-analytics/boston-311/tree/main/0
 
 The [Output folder](https://github.com/georgetown-analytics/boston-311/tree/main/03%20output) will contain our analytical results.
 
-The [Viz folder]https://github.com/georgetown-analytics/boston-311/tree/main/04%20viz) will have final data visualizations for reporting.
+The [Viz folder](https://github.com/georgetown-analytics/boston-311/tree/main/04%20viz) will have final data visualizations for reporting.
 
 The [Archive folder](https://github.com/georgetown-analytics/boston-311/tree/main/05%20archive) contains old files and drafts that might still have value as a reference.
 
